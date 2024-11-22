@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cookie&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cookie&family=Handlee&family=Pathway+Gothic+One&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -8,7 +11,10 @@ body {
     padding: 0px;
     margin: 0px;
     background: #f6f6f6;
-    font-family: 'Lora', serif;
+    font-family: "Handlee", cursive;
+}
+h5{
+    font-size: 30px;
 }
 
 h1,
@@ -17,11 +23,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Candal', serif;
+    font-family: "Cookie", cursive;
     color: #444;
     margin: 5px;
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -39,12 +44,12 @@ i {
 
 .btn {
     padding: .5rem 1rem;
-    background: #006669;
+    background: #d58a94;
     color: white;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     font-size: 1.08em;
-    font-family: 'Lora', serif;
+    font-family: "Handlee", cursive;
 }
 
 .btn-big {
@@ -54,7 +59,7 @@ i {
 
 .btn:hover {
     color: white;
-    background: #005255;
+    background: #c95d7a;
 }
 
 .text-input {
@@ -93,7 +98,8 @@ i {
 
 /* NAV-BAR */
 header {
-    background-color: #008489;
+    /* background-color: #F2B8C6; */
+    background-color: #d58a94;
     height: 66px;
 }
 
@@ -112,7 +118,6 @@ header .logo-text {
 }
 
 header .logo-text span {
-    color: #05f7ff;
     font-family: 'Candal', serif;
 }
 
@@ -167,7 +172,8 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: #006669;
+    color: white;
+    background-color: #c95d7a;
     transition: 0.5s;
 }
 
@@ -180,7 +186,7 @@ header .menu-toggle {
 }
 
 .post-wrapper a:hover {
-    color: #006669;
+    color: #c95d7a;
 }
 
 /* Post-Slider */
@@ -199,7 +205,7 @@ header .menu-toggle {
     top: 50%;
     right: 30px;
     font-size: 2em;
-    color: #006669;
+    color: #d58a94;
     cursor: pointer;
 }
 
@@ -208,7 +214,7 @@ header .menu-toggle {
     top: 50%;
     left: 30px;
     font-size: 2em;
-    color: #006669;
+    color: #d58a94;
     cursor: pointer;
 }
 
@@ -278,11 +284,11 @@ header .menu-toggle {
     border-top: 1px solid #e0e0e0;
     margin-top: 10px;
     padding-top: 10px;
-}
+} 
 
 .content .popular .post img {
     height: 60px;
-    width: 75px;
+    width: 7px;
     float: left;
     margin-right: 10px;
 }
@@ -291,14 +297,14 @@ header .menu-toggle {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    border: 1px solid #006669;
+    border: 1px solid #d58a94;
     background: transparent;
     border-radius: 0px;
-    color: #006669;
+    color: #d58a94;
 }
 
 .content .main-content .post .read-more:hover {
-    background-color: #006669;
+    background-color: #d58a94;
     color: white;
     transition: .25s;
 }
@@ -318,7 +324,7 @@ header .menu-toggle {
 }
 
 .content .main-content .post .post-preview h2 a:hover {
-    color: #006669;
+    color: #c95d7a;
 }
 
 .content .main-content .post .post-preview i {
@@ -378,7 +384,8 @@ header .menu-toggle {
 .content .sidebar .section.topics ul li a:hover {
     padding-left: 10px;
     transition: all 0.3s;
-
+    color: black;
+    font-weight: 50;
 }
 
 /*-------------------------- Auth pages --------------- */
@@ -437,7 +444,7 @@ header .menu-toggle {
 }
 
 .footer .footer-content .about h1 span {
-    color: #05f7ff;
+    color: #d58a94;
 }
 
 .footer .footer-content .about .contact span {
@@ -511,6 +518,11 @@ header .menu-toggle {
     padding-top: 20px;
 }
 
+.carousel .carousel-inner .carousel-item img{
+    height: 90vh;
+    width: 100%;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width : 750px) {
@@ -520,7 +532,7 @@ header .menu-toggle {
 
     header ul {
         width: 100%;
-        background: #0E94A0;
+        background: #d58a94;
         max-height: 0px;
         overflow: hidden;
     }
@@ -541,13 +553,13 @@ header .menu-toggle {
 
     header ul li ul li a {
         padding: 10px;
-        background: #0E94A0;
+        background: #d58a94;
         color: white;
         padding-left: 50px;
     }
 
     header ul li ul li a:hover {
-        background: #006669;
+        background: #d58a94;
     }
 
     header ul li ul li a.logout {
@@ -566,24 +578,3 @@ header .menu-toggle {
         margin-left: .5em;
     }
 }
-
-
-
-
-/* //Swiper */
-
-.swiper-container {
-    width: 100%;
-    height: 300px;
-    /* Adjust height as needed */
-}
-
-.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background: #ddd;
-    /* Add a background for visibility */
-}
-

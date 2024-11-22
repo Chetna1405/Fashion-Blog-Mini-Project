@@ -39,5 +39,4 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
-
 });
