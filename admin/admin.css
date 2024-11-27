@@ -1,0 +1,90 @@
+header {
+    /* background-color: #F2B8C6; */
+    background-color: #c2818a;
+}
+
+.admin-wrapper{
+    height: calc(100% - 66px);
+    display: flex;
+}
+
+
+.admin-wrapper .left-sidebar{
+    flex: 2.5;
+    height: 100%;
+    background: #e69aa4;
+    
+}
+.admin-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    
+}
+
+.admin-wrapper .left-sidebar ul li{
+    text-align: center;
+}
+
+.admin-wrapper .left-sidebar ul li a{
+    padding: 18px;
+    display: block;
+    border-bottom: 2px solid #d77a86;
+    font-weight: 600;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover{
+    background : #d77a86;
+    color: #ffffff;
+}
+
+.admin-wrapper .admin-content {
+    flex: 7.5;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+
+
+.admin-content .content .page-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th,td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e69aa4;
+}
+
+
+.edit{
+    color: green;
+}
+
+.delete{
+    color: red;
+}
+
+.publish{
+    color: blue;
+}
+
+.edit:hover,
+.publish:hover,
+.delete:hover{
+    text-decoration: underline;
+    
+}
+
+
+form div{
+    margin-bottom: 16px;
+}
