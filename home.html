@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -31,67 +37,218 @@
         </div>
         <i class="fa fa-bars menu-toggle"></i>
         <ul class="nav">
-
-            <li><a href="register.html">Sign up</a></li>
-            <li><a href="login.html">Login</a></li>
-
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <!-- <li><a href="#">Sign up</a></li>
+            <li><a href="#">Login</a></li> -->
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Glam Aura
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+                <ul>
+                    <li><a href="./admin/users/index.html">Dashboard</a></li>
+                    <li><a href="index.html" id="logout" class="logout">Logout</a></li>
+                </ul>
+            </li>
         </ul>
     </header>
 
-    <div>
-        <div style="padding-left: 20px; padding-right: 20px;">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100"
-                            src="https://editorialist.com/wp-content/uploads/2022/05/EDFashion_StylePersonas_Hero-copy.jpg"
-                            alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="https://assets.vogue.com/photos/6324cbb0563d9de75791b508/master/w_2560%2Cc_limit/___collage_story.jpg"
-                            alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/festive.webp" alt="Third slide">
+
+
+    <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/wallpaper.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/jeans.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/festive.webp" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+    <!-- page Wrapper -->
+    <div class="page-wrapper">
+        <!-- Post Slider -->
+        <div class="post-slider">
+            <h1 class="slider-title">Trending Posts</h1>
+            <i class="fas fa-angle-double-left prev"></i>
+            <i class="fas fa-angle-double-right next"></i>
+            <div class="post-wrapper">
+                <div class="post">
+                    <img src="Clothing/Images/Best-Saree-Blouses-Colour-Combinations-for-Weddings-2048x1303.webp" alt=""
+                        class="slider-image" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="./slider/saree.html">Best Saree & Blouses Colour Combinations for Weddings </a></h4>
+                        <i class="far fa-user"></i> <span> Allen</span>
+                        &nbsp;
+                        <i class="far fa-calendar"></i> <span> 20th August, 2024</span>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="post">
+                    <img src="Jewellery/Images/fall.webp" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="./Jewellery/jewelleryarticle1.html">Jewelry Trends We’ve Been Seeing Everywhere for Fall</a></h4>
+                        <i class="far fa-user"></i> <span> Emily</span>
+                        &nbsp;
+                        <i class="far fa-calendar"></i> <span> 12th August, 2024</span>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/heel.jpg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="./slider/shoe.html">I Checked TikTok and Instagram for 2024's Top Shoe Trends</a></h4>
+                        <i class="far fa-user"></i> <span> Janice</span>
+                        &nbsp;
+                        <i class="far fa-calendar"></i> <span> 15th September, 2024</span>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="Outfit/Images/casual.webp" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="./slider/work.html">Effortless Casual Work Outfits for the Office</a></h4>
+                        <i class="far fa-user"></i> <span> David</span>
+                        &nbsp;
+                        <i class="far fa-calendar"></i> <span> 14th August, 2024</span>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="Trends/Images/prints.webp" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="./slider/summer.html">If It's Not Clear by Now, Summer Is All About colors</a></h4>
+                        <i class="far fa-user"></i> <span> David</span>
+                        &nbsp;
+                        <i class="far fa-calendar"></i> <span> 14th August, 2024</span>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="Hair/Images/messy.jpg" alt="" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="./slider/hair.html">Hair Trends You’re About to See Everywhere</a></h4>
+                        <i class="far fa-user"></i> <span> David</span>
+                        &nbsp;
+                        <i class="far fa-calendar"></i> <span> 14th August, 2024</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <br>
-<br><br>
-    <h1 style="text-align: center; text-decoration: solid; text-decoration: wavy; font-weight: 800; font-family:  'Playfair Display', serif">DISCOVER THE NEW TRENDS ON <span style="color: #d58a94;">GLAMAURA</span></h1>
+    <!-- // Post Slider -->
 
-    <div class="main-part" style="padding:60px">
-        <div class="ist" style="height: 60% ; display: flex; align-items: center; justify-content: space-around ;">
-            <img class="img-thumbnail" style="height: 600px;"  src="https://www.whiteoutpress.com/wp-content/uploads/2019/02/stylish1.jpg" alt="">
-            <img class="img-thumbnail" style="height: 600px;" src="https://www.mychicobsession.com/wp-content/uploads/2020/11/classic-style-fall-fashion-15-of-57.jpg" alt="">
+    <!-- Content -->
+    <div class="content clearfix">
+        <!-- Main content -->
+        <div class="main-content">
+            <h1 class="recent-post-title">Recent Posts</h1>
+            <div class="post">
+                <img src="images/knit.webp" alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="1st.html">All—and I Mean All—the Cool Girls Are Wearing This Knitwear Style for
+                            Winter</a></h2>
+                    <i class="far fa-user"></i> <span> Kelly</span>
+                    &nbsp;
+                    <i class="far fa-calendar"></i> <span> 2nd October, 2024</span>
+                    <p>If there's one fashion item taking up the most space in both my brain and closet right now, it's
+                        probably cardigans. Sure, it was a close call with black boots, but I think the knitwear won!
+                    </p>
+                    <a href="1st.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/pants.jpg" alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="2nd.html">It's Not Denim's Fault That Chic People Prefer This Stylish Fall Pants
+                            Trend</a></h2>
+                    <i class="far fa-user"></i> <span> Ema</span>
+                    &nbsp;
+                    <i class="far fa-calendar"></i> <span> 4th October, 2024</span>
+                    <p>All year long, denim holds most people's wardrobes together. Jeans are a constant—the bottoms
+                        that we turn to when nothing else works, whether it's winter, spring, summer, or fall.</p>
+                    <a href="2nd.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/abc.webp" alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="3rd.html">The 2024 Luxury Report: The Brands, Items, and Trends Defining Designer
+                            Fashion</a></h2>
+                    <i class="far fa-user"></i> <span> Catherine</span>
+                    &nbsp;
+                    <i class="far fa-calendar"></i> <span> 4th September, 2024</span>
+                    <p>It was the year of elegance and the outfit-defining accessory, whether in the form of a pillbox
+                        hat, long leather gloves, or a charm-adorned handbag. </p>
+                    <a href="3rd.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/accessory.jpg" alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="Jewellery/articles/3.html">The Holiday Accessories Edit: 6 It Buys Defining the Season
+                        </a></h2>
+                    <i class="far fa-user"></i> <span> Damon</span>
+                    &nbsp;
+                    <i class="far fa-calendar"></i> <span> 8th October, 2024</span>
+                    <p>ever overlook the power that good accessories hold. A strong additional piece is something that
+                        can take a good outfit to a whole other level. Sometimes, all it takes it just one thing.
+                        Whether it's a handbag in a certain shape... </p>
+                    <a href="Jewellery/articles/3.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
         </div>
+        <!--// Main content -->
+        <div class="sidebar">
+            <div class="section search">
+                <h2 class="section-title">Search</h2>
+                
+                    <input type="text" name="search-term" id="mySearch" class="text-input" placeholder="Search....">
+                
+            </div>
+
+            <div class="section topics">
+                <h2 class="section-title">Topics</h2>
+                <ul id="myMenu">
+                    <li><a href="Trends/trend.html">Trends</a></li>
+                    <li><a href="Jewellery/jewellery.html">Jewellery</a></li>
+                    <li><a href="Outfit/outfit.html">Outfit</a></li>
+                    <li><a href="Clothing/clothes.html">Clothing</a></li>
+                    <li><a href="Hair/hair.html">Hair</a></li>
+                    <li><a href="Celebrity Styles/celeb.html">Celebrity Styles</a></li>
+                    <li><a href="Footwear/footwear.html">Footwear</a></li>
+                </ul>
+            </div>
+
+        </div>
+
     </div>
+    <!-- // Content -->
 
-    <p style="text-align: center; padding-left: 40px; padding-right: 40px; font-size: x-large;"><b>As the world of fashion continues to evolve, 2024 is all about creativity, sustainability, and breaking traditional
-    boundaries. Here’s a deep dive into the hottest trends this year that are redefining style and individuality.
-    </b></p>
-
-
-
-
-
-
+    </div>
+    <!-- //page Wrapper -->
 
 
     <!-- footer  -->
@@ -120,7 +277,7 @@
                 <h2>Quick Links</h2>
                 <br>
                 <ul>
-                    <a href="#">
+                    <a href="home.html">
                         <li>Home</li>
                     </a>
                     <a href="about.html">
@@ -140,7 +297,7 @@
             <div class="footer-section contact-form">
                 <h2>Contact Us</h2>
                 <br>
-                <form action="index.html" method="post">
+                <form action="home.html" method="post">
                     <input type="email" name="email" class="text-input contact-input"
                         placeholder="Your email address...">
                     <textarea rows="4" name="message" class="text-input contact-input"
@@ -165,7 +322,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick Crousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="login.js" defer></script>
 
 
 </body>

@@ -23,8 +23,8 @@
         </div>
         <i class="fa fa-bars menu-toggle"></i>
         <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#">Services</a></li>
             <!-- <li><a href="#">Sign up</a></li>
             <li><a href="#">Login</a></li> -->
@@ -33,19 +33,19 @@
     </header>
 
     <div class="auth-content">
-        <form action="index.html" method="post">
+        <form>
             <h2 class="form-title">Login</h2>
             <div>
-                <label for="">Username</label>
-                <input type="text" name="username" class="text-input">
+                <label for="">Email</label>
+                <input type="text" id="email" name="email" class="text-input">
             </div>
             <div>
                 <label for="">Password</label>
-                <input type="password" name="password" class="text-input">
+                <input type="password" id="password" name="password" class="text-input">
             </div>
             <div>
-                <button type="submit" name="login-btn" class="btn btn-big">Login</button>
-                <p>Or <a href="register.html">Sign In</a></p>
+                <button type="submit" id="submit" name="login-btn" class="btn btn-big">Login</button>
+                <p>Or Don't have an account ? <a href="register.html"> Sign Up</a></p>
             </div>
         </form>
     </div>
@@ -57,7 +57,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick Crousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./app.js"></script>
+    <script type="module" src="login.js" defer></script>
 </body>
 
 </html>

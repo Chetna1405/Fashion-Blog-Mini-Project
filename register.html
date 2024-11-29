@@ -23,17 +23,18 @@
         </div>
         <i class="fa fa-bars menu-toggle"></i>
         <ul class="nav">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <!-- <li><a href="#">Sign up</a></li>
             <li><a href="#">Login</a></li> -->
-            
+
         </ul>
     </header>
 
     <div class="auth-content">
-        <form action="index.html" method="post">
+        <!-- <form action="home.html" method="post"> -->
+        <form>
             <h2 class="form-title">Register</h2>
 
             <!-- <div class="msg success error">
@@ -44,23 +45,23 @@
 
             <div>
                 <label for="">Username</label>
-                <input type="text" name="username" class="text-input">
+                <input type="text" id="username" name="username" class="text-input">
             </div>
             <div>
                 <label for="">Email</label>
-                <input type="email" name="email" class="text-input">
+                <input type="email" id="email" name="email" class="text-input">
             </div>
             <div>
                 <label for="">Password</label>
-                <input type="password" name="password" class="text-input">
+                <input type="password" id="password" name="password" class="text-input">
             </div>
             <div>
                 <label for="">Password Confirmation</label>
-                <input type="password" name="passwordConf" class="text-input">
+                <input type="password" id="passwordConf" name="passwordConf" class="text-input">
             </div>
             <div>
-                <button type="submit" name="register-btn" class="btn btn-big">Register</button>
-                <p>Or <a href="login.html">Sign In</a></p>
+                <button type="submit" id="submit" name="register-btn" class="btn btn-big">Register</button><br>
+                <p>Have an acoount ? <a href="login.html">Sign In</a></p>
             </div>
         </form>
     </div>
@@ -72,7 +73,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick Crousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./app.js"></script>
+    <script type="module" src="register.js" defer></script>
 </body>
 
 </html>
